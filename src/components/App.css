@@ -1,0 +1,88 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../assets/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 40rem;
+  padding: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.text-input:focus {
+  outline: 0;
+  box-shadow: tomato 0px 1px 1px, tomato 0px 0px 0px 1px;
+}
+
+.text-input::placeholder {
+  color: white;
+}
+
+.form-btn {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background-color: tomato;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.form-btn:hover {
+  background-color: #dd312e;
+  transition: background-color 0.3s ease;
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.result-value {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.error {
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .form {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
